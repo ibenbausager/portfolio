@@ -1,11 +1,59 @@
+html{
+  scroll-behavior: smooth;
+  }
 
+body{
+  margin:0;
+  background-color:#e6eaec;
+}
+
+/*placering af tekst oven på billedet*/
+header{
+  position: relative;
+  text-align: center;
+  color: #2f616d;
+}
+.top-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform:uppercase;
+  letter-spacing: 2px;
+}
+
+/*nav-bar*/
+.navbar ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+h2{
+  margin-left: 50%;
+  font-size: medium;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+
+.btn{
+  font-size: medium;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  border: 1px solid #2f616d
+}
+
+
+/*portfolio-sectionen*/
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(82, 185, 22);
+    background-color: #b2dbd5;
   }
   
-.flex-container > div {
+  .flex-container > item {
     background-color: #f1f1f1;
     width: 100px;
     margin: 10px;
@@ -13,54 +61,15 @@
     line-height: 75px;
     font-size: 30px;
   }
-
-
-/*
-* {
-    box-sizing: border-box;
+  .text-block {
+    position: absolute;
+    color: #000;
+    font-size: 80px;
+    padding-left: 200px;
+    padding-right: 20px;
   }
-  
-  body {
-    margin: 0;
-    font-family: Arial;
-  }
-  
-  .header {
-    text-align: center;
-    padding: 32px;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  /*.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
 
-@media screen and (min-width: 600px)  {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-
-@media (min-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-    
-}
-    */
-
-    
-/* Z-INDEX PÅ TEKST PÅ TOP BILLEDE*/
+  .kontakt-links ul{
+    list-style: none;
+  }
+ 

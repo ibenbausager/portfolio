@@ -5,74 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iben Nørgaard Bausager</title>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
 <!--header-->
-<!--    <header>
+    <header>
         <img src="img/headerimg.jpg" class="top img" alt="XX" width="100%">
-        <h1>IBEN NØRGAARD BAUSAGER</h1>
+        <div class="top-img">iben nørgaard bausager</div>
     </header>
--->
-<!--navigationsbar   
+
+<!--navigationsbar-->   
     <nav class="navbar">
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="#">OM MIG</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">KONTAKT</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li>
+                <a href="#ommig" class="btn-li">om mig</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="btn-li">portfolio</a>
+            </li>
+            <li>
+                <a href="#kontakt" class="btn-li">kontakt</a>
+            </li>
+        </ul>
     </nav>
---> 
- <!--om mig 
+
+ <!--om mig-->
     <section>
-        <h2>OM MIG</h2>
-        <img src="portræt">
-        tekst
-        <a href="CV.pdf" target="_blank" class="btn btn-default btn-lg page-scroll">CV</a>
-        <button>CV</button>
-        <button>KONTAKT</button>
+    <h2>OM MIG</h2>
+        <div class="om-mig" id="ommig">
+            <img src="portræt" class="portræt" alt="XX" >
+            <p>loren ejklsfleklkejfldjfljsdlfjsdlfjdslk</p>
+            <a href="CV.pdf" target="_blank" class="btn">CV</a>
+            <button class="btn">kontakt</button>
+        </div>
     </section>
--->
 
 <!--portfolio-->
+    <section>
     <h2>PORTFOLIO</h2>
-    
-        <div class="flex-container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>  
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>  
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>  
-            <div>10</div>
-            <div>11</div>
-            <div>12</div>  
+    <div class="flex-container" id="portfolio">
+        <div class="item1">
+            <img src="img/pige.jpg" alt="pige">
+            <div class="text-block">
+                <h4>01</h4>
+            </div>
         </div>
-   
+        <div class="item2">
+            <img src="img/logo.png" alt="logo">
+            <div class="text-block">
+                <h4>02</h4>
+            </div>
+        </div>
+        <div class="item3">
+            <img src="img/pige.jpg" alt="pige">
+            <div class="text-block">
+                <h4>03</h4>
+            </div>
+        </div>
+        <div class="item4">
+            <img src="img/logo.png" alt="logo">
+            <div class="text-block">
+                <h4>04</h4>
+            </div>
+        </div>
+        <div class="item5">
+            <img src="img/pige.jpg" alt="pige">
+            <div class="text-block">
+                <h4>05</h4>
+            </div>
+        </div>
+        <div class="item6">
+            <img src="img/logo.png" alt="logo">
+            <div class="text-block">
+                <h4>06</h4>
+            </div>
+        </div>
+    </section>
         <!--6-8 billeder i flexbox
         med hover effekt hvor tal og tekst dukker op (h4)-->
    
 
 <!--kontakt-->
     <section>
-        <H2>KONTAKT MIG</H2>
+    <h2>kontakt mig</h2>
+    <div class="kontakt-links" id="kontakt">
+        <ul>
+            <li>mail</li>
+            <li>tlf</li>
+            <li>linkedin</li>
+        </ul>
+    </div>
+    
         <!--kontakt info
         evt. icon til linkedin (a ref)-->
     </section>
 
 <!--footer-->
     <footer>
-        <!--container med tekst
-        <p>copy right 2021 Iben Nørgaard Bausager</p>-->
+        <!--container med tekst-->
+        <p>copy right 2021 Iben Nørgaard Bausager</p>
     </footer>
 </body>
 </html>
