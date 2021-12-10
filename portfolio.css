@@ -7,12 +7,15 @@ body{
   margin:0;
 }
 
-/*placering af tekst oven på billedet*/
+/*header*/
 header{
   position: relative;
   text-align: center;
   color: #2f616d;
+  margin:0%;
 }
+
+/*placering af tekst oven på billedet*/
 .top-img{
   position: absolute;
   top: 50%;
@@ -22,71 +25,7 @@ header{
   font-family: open Sans;
   text-transform:uppercase;
   letter-spacing: 2px;
-  padding-bottom: 0%;
 }
-/*om mig sectionen*/
-.mig{
-  background-color: #b2dbd5;
-  padding:30px;
-}
-
-.portræt{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  filter: grayscale(100%);
-  border-radius: 5px;
-  width:150px;
-}
-  .om-mig {
-    padding-top: 6%;
-    background-color:#b2dbd5;
-  }
-  
-.btn{
-  font-size: 16px;
-  font-family: open Sans;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding:14px 14px;
-  margin:50%;
-  border-radius: 4px;
-  border: 1px solid #2f616d
-}
-
-
-/*nav-bar*/
-.navbar ul{
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  background-color: #e6eaec;
-  font-size: 14px;
-  margin:0%;
-  padding-top: 25px;
-  padding-bottom:25px;
-}  
-
-p{
-  color:#2f616d;
-  font-size: 14px;
-  font-family: open Sans;
-  letter-spacing: 2px;
-  display:flex;
-  justify-content: center;
-  
-
-}
-a{
-  color:#2f616d;
-  font-family: open Sans;
-  text-decoration:underline #e6eaec;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
 
 h2{
   color:#2f616d;
@@ -99,6 +38,76 @@ h2{
 
 }
 
+/*om mig sectionen*/
+.mig{
+  background-color: #b2dbd5;
+}
+
+.portræt{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  filter: grayscale(100%);
+  border-radius: 10px;
+  width:150px;
+}
+.om-mig {
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+p{
+  color:#2f616d;
+  font-size: 14px;
+  font-family: open Sans;
+  letter-spacing: 2px;
+  line-height: 22px;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 3%;
+}
+
+.btn{
+  background-color: #f2b90c;
+  color: #2f616d;
+  font-size: 16px;
+  font-family: open Sans;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding:14px 14px;
+  margin:50%;
+  border-radius: 4px;
+  text-decoration:underline #f2b90c;
+}
+
+
+/*nav-bar*/
+
+.navbar{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #e6eaec;
+}
+.navbar ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 14px;
+}  
+
+a{
+  color:#2f616d;
+  font-family: open Sans;
+  text-decoration:underline #e6eaec;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 h4{
   font-size: 40px;
   font-family: open Sans;
@@ -107,8 +116,7 @@ h4{
   letter-spacing: 2px;
   margin:10px 10px;
   display: flex;
-  justify-content
-  justify-content: center;
+  justify-content:center;
 
 }
 
@@ -124,6 +132,7 @@ li{
 /*portfolio-sectionen*/
 .portfolio{
   background-color: #e6eaec;
+  padding-top: 6%;
 }
 
 .flex-container {
@@ -138,7 +147,7 @@ li{
   }
   
 .item img{
-  border-radius: 3px;
+  border-radius: 4px;
   width:260px;
   height:200px;
   
@@ -148,7 +157,7 @@ li{
   height:60px;
   width:60px;
   margin-top:-60px;
-  margin-left:80%;
+  margin-left:75%;
   color: #000;
 }
 
@@ -157,6 +166,7 @@ li{
   
   .kontakt{
     background-color: #b2dbd5;
+    padding-top: 6%;
   }
   .kontakt-links ul{
     background-color: #b2dbd5;
