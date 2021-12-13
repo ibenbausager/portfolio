@@ -50,12 +50,12 @@ h2{
   padding-top: 5%;
   padding-bottom: 5%;
   filter: grayscale(100%);
-  border-radius: 20%;
+  border-radius: 25%;
   width:150px;
 }
 
 
-.om-mig {
+.profil {
   padding-top: 6%;
   padding-bottom: 6%;
 }
@@ -74,26 +74,43 @@ p{
   padding-bottom: 3%;
 }
 
-.btn{
+.btn-cv{
   background-color: #f2b90c;
   color: #2f616d;
   font-size: 16px;
   font-family: open Sans;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding:14px 14px;
-  margin:50%;
+  margin-left: 10%;
+  padding:14px 20px;
   border-radius: 4px;
   text-decoration:underline #f2b90c;
 }
 
+.btn {
+  background-color: #f2b90c;
+  color: #2f616d;
+  font-size: 16px;
+  font-family: open Sans;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 12%;
+  padding:14px 20px;
+  border-radius: 4px;
+  text-decoration:underline #f2b90c;
+}
 
 /*nav-bar*/
 
 .navbar{
+  position: sticky;
+  top:0;
+  width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
   background-color: #e6eaec;
+  z-index: 2;
+  
 }
 .navbar ul{
   display: flex;
@@ -104,6 +121,7 @@ p{
 
 a{
   color:#2f616d;
+  width:100%;
   font-family: open Sans;
   text-decoration:underline #e6eaec;
   text-transform: uppercase;
@@ -148,11 +166,14 @@ li{
     padding-bottom:100px;
   }
   
+  .item{
+    position: relative;
+  }
+
 .item img{
   border-radius: 4px;
   width:260px;
   height:200px;
-  
 }
 
 .text-block {
@@ -163,8 +184,34 @@ li{
   color: #000;
 }
 
-.item:hover {
-  opacity: 0.3;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 95%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #b2dbd5;
+  border-radius: 4px;
+}
+
+.item:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: #2f616d;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
   /*kontakt sectionen*/
@@ -178,3 +225,8 @@ li{
     list-style: none;
   }
  
+  @media screen {min-width: 768;
+    
+    
+
+  }
