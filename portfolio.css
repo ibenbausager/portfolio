@@ -172,14 +172,14 @@ li{
 
 .item img{
   border-radius: 4px;
-  width:260px;
-  height:200px;
+  width:290px;
+  height:230px;
 }
 
 .text-block {
   height:60px;
   width:60px;
-  margin-top:-60px;
+  margin-top:-48px;
   margin-left:75%;
   color: #000;
 }
@@ -212,6 +212,7 @@ li{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  text-decoration: none;
 }
 
   /*kontakt sectionen*/
