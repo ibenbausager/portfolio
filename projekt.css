@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+  margin:0;
+  background-color:#e6eaec;
+}
+
+/*header starter*/
+header{
+  position: relative;
+  text-align: center;
+  color: #2f616d;
+  margin-bottom:3%;
+}
+
+/*placering af tekst oven på billedet*/
+.top-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: open Sans;
+  font-weight: bold;
+  text-transform:uppercase;
+  letter-spacing: 2px;
+}
+
+.img{
+  height:120px;
+}
+
+h2{
+  color:#2f616d;
+  font-size: 30px;
+  font-family: open Sans;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+
+}
+ /*header slutter*/
+
+h4{
+  color: #2f616d;
+  font-size: 24px;
+  font-family: open Sans;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+.image {
+    width:50%;
+    margin-left: 2%;
+    float:left;
+    padding:0% 3%;
+}
+
+p{
+color:#2f616d;
+font-size: 20px;
+font-family: open Sans;
+font-weight: bold;
+letter-spacing: 2px;
+line-height: 1.6;
+display:flex;
+margin-right: 2%;
+}
+
+.btn {
+    background-color: #f2b90c;
+    color: #2f616d;
+    font-size: 16px;
+    font-family: open Sans;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding:14px 20px;
+    margin-left: 80%;
+    border-radius: 4px;
+    text-decoration:underline #f2b90c;
+  }
