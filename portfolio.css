@@ -16,7 +16,7 @@ header{
 }
 
 .headerimg{
-  height:auto;
+  height:100%;
 }
 
 /*placering af tekst oven på billedet*/
@@ -97,10 +97,9 @@ h4{
   display:block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5%;
-  padding-bottom: 5%;
   filter: grayscale(100%);
   border-radius: 25%;
+  box-shadow: 0 3px 10px 0 rgb(0 0 0 / 0.3); /*https://www.w3schools.com/css/css3_shadows_box.asp*/
   width:180px;
   z-index: 3;
 }
@@ -143,6 +142,7 @@ p{
   padding:10px 15px;
   border-radius: 4px;
   text-decoration:none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
 .btn-cv {
@@ -157,6 +157,7 @@ p{
   padding:10px 15px;
   border-radius: 4px;
   text-decoration:none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
 
@@ -185,6 +186,7 @@ p{
   border-radius: 4px;
   width:290px;
   height:230px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
 .text-block {
@@ -240,10 +242,11 @@ p{
   }
 
   h3{
-    color:#2f616d;
+    color:#f2b90c;
     font-size: 14px;
     font-family: open Sans;
     text-transform: uppercase;
+    text-decoration: underline;
     letter-spacing: 2px;
     text-align:left;
     display:flex;
@@ -257,10 +260,10 @@ p{
   } 
 
   .headerimg{
-    height:500px;
+    height:400px;
   }
   .top-img{
-    font-size: 35px;
+    font-size: 40px;
   }
 
   h2{
@@ -282,6 +285,11 @@ p{
   .profil {
     padding-top: 2%;
     padding-bottom: 2%;
+  }
+
+  .flex-container {
+    margin-left: 8%;
+    margin-right: 8%;
   }
 
   .portfolio{
@@ -311,6 +319,7 @@ p{
   a{
     font-size: 18px;
     margin-left:3%;
+    line-height: 1.6;
   }
 
   p{
@@ -319,5 +328,17 @@ p{
     margin-bottom: 2%;
     margin-left: 23%;
   }
+
+}
+  @media screen and (min-width: 1900px){
+    * {
+      margin: 0px;
+      padding: 0px;
+    } 
+  
+    .flex-container {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
 
   }
