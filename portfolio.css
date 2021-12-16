@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); /*importeret font fra Google font */
 html{
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /*https://www.w3schools.com/howto/howto_css_smooth_scroll.asp  - smooth scroll funktion */
   }
 
 body{
@@ -167,7 +167,7 @@ p{
   padding-top: 6%;
 }
 
-.flex-container {
+.flex-container { /*flexbox med images*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -189,6 +189,7 @@ p{
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
+/*tekst placeret ovenpå hver image i flexbox*/
 .text-block {
   height:60px;
   width:60px;
@@ -197,6 +198,7 @@ p{
   color: #000;
 }
 
+/*hover effect på alle image i flexbox*/
 .overlay {
   position: absolute;
   top: 0;
@@ -211,7 +213,7 @@ p{
   border-radius: 4px;
 }
 
-.item:hover .overlay {
+.item:hover .overlay { /*overlay er ikke gennemsigtig*/
   opacity: 1;
 }
 
@@ -229,7 +231,6 @@ p{
 }
 
   /*kontakt sectionen*/
-  
   .kontakt{
     background-color: #b2dbd5;
     padding-top: 6%;
@@ -253,7 +254,7 @@ p{
   }
 
 
-  @media screen and (min-width: 750px){
+  @media screen and (min-width: 750px){ /* media queries til tablet*/
   * {
     margin: 0px;
     padding: 0px;
@@ -287,7 +288,7 @@ p{
     padding-bottom: 2%;
   }
 
-  .flex-container {
+  .flex-container { /*så der placeres 2 image side om side på en række i flexbox*/
     margin-left: 8%;
     margin-right: 8%;
   }
@@ -330,13 +331,13 @@ p{
   }
 
 }
-  @media screen and (min-width: 1900px){
+  @media screen and (min-width: 1900px){ /*media queries til desktop*/
     * {
       margin: 0px;
       padding: 0px;
     } 
   
-    .flex-container {
+    .flex-container { /*så der placeres 3 image side om side på en række i flexbox*/
       margin-left: 20%;
       margin-right: 20%;
     }
