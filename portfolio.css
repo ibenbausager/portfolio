@@ -15,10 +15,6 @@ header{
   margin:0%;
 }
 
-.headerimg{
-  height:100%;
-}
-
 /*placering af tekst oven på billedet*/
 .top-img{
   position: absolute;
