@@ -3,32 +3,44 @@ html{
   scroll-behavior: smooth; /*https://www.w3schools.com/howto/howto_css_smooth_scroll.asp  - smooth scroll funktion */
   }
 
-body{
-  margin:0;
+body, html {
+  margin: 0;
 }
 
 /*header*/
 header{
   position: relative;
   text-align: center;
-  color: #2f616d;
+  background-color: #e6eaec;
   margin:0%;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 /*placering af tekst oven på billedet*/
-.top-img{
+.text-header {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #2f616d;
+}
+
+h1{
   font-size: 20px;
   font-family: open Sans;
   font-weight: bold;
   text-transform:uppercase;
   letter-spacing: 4px;
+  color: #2f616d;
 }
+/*header slutter*/
 
-h2{
+h2{ /*alle overskrifter*/
   color:#2f616d;
   font-size: 20px;
   font-family: open Sans;
@@ -45,11 +57,12 @@ h2{
 .navbar{
   position: sticky;
   top:0;
+  z-index: 2;
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
   background-color: #e6eaec;
-  z-index: 2;
+  
   
 }
 .navbar ul{
@@ -86,6 +99,10 @@ h4{
 /*profil sectionen*/
 .mig{
   background-color: #b2dbd5;
+  background-image: url(img/grafik.png); /*https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_background-position*/
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 250px 200px;
   padding-bottom: 8%;
 }
 
@@ -97,22 +114,14 @@ h4{
   border-radius: 25%;
   box-shadow: 0 3px 10px 0 rgb(0 0 0 / 0.3); /*https://www.w3schools.com/css/css3_shadows_box.asp*/
   width:180px;
-  z-index: 3;
 }
-/*
-.grafik{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -20%;
-}
-*/
+
 .profil {
   padding-top: 6%;
   padding-bottom: 6%;
 }
 
-p{
+p{ /*brødtekst*/
   color:#2f616d;
   font-size: 14px;
   font-family: open Sans;
@@ -126,7 +135,7 @@ p{
   padding-bottom: 4%;
 }
 
-.btn {
+.btn { /*knappe til "andre talenter"*/
   background-color: #f2b90c;
   color: #2f616d;
   font-size: 16px;
@@ -141,7 +150,7 @@ p{
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
-.btn-cv {
+.btn-cv { /*knappe til "CV"*/
   background-color: #f2b90c;
   color: #2f616d;
   font-size: 16px;
@@ -155,7 +164,6 @@ p{
   text-decoration:none;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
-
 
 /*portfolio-sectionen*/
 .portfolio{
@@ -172,11 +180,11 @@ p{
     margin-right: 20%;
     padding-top: 20px;
     padding-bottom:100px;
-  }
-  
-  .item{
-    position: relative;
-  }
+}
+
+.item{
+  position: relative;
+}
 
 .item img{
   border-radius: 4px;
@@ -213,7 +221,7 @@ p{
   opacity: 1;
 }
 
-.text {
+.text { /*tekst på overlay*/
   color: #2f616d;
   font-size: 20px;
   position: absolute;
@@ -226,116 +234,128 @@ p{
   text-decoration: none;
 }
 
-  /*kontakt sectionen*/
-  .kontakt{
-    background-color: #b2dbd5;
-    padding-top: 6%;
-    padding-bottom: 10%;
-  }
-  .kontakt-links ul{
-    margin-top: 2%;
-    background-color: #b2dbd5;
-    list-style: none;
-  }
+/*kontakt sectionen*/
+.kontakt{
+  background-color: #b2dbd5; 
+  background-image: url(img/grafik2.png); /*https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_background-position*/
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 130px 150px;
+  padding-top:10%;
+  padding-bottom: 10%;
+}
 
-  h3{
-    color:#f2b90c;
-    font-size: 14px;
-    font-family: open Sans;
-    text-transform: uppercase;
-    text-decoration: underline;
-    letter-spacing: 2px;
-    text-align:left;
-    display:flex;
-  }
+.kontakt-links ul{
+  margin-top: 2%;
+  background-color: #b2dbd5;
+  list-style: none;
+}
+
+h3{
+  color:#f2b90c;
+  font-size: 14px;
+  font-family: open Sans;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-align:left;
+  display:flex;
+}
+  
+@media screen and (min-width: 750px){ /* media queries til tablet*/
+* {
+  margin: 0px;
+  padding: 0px;
+} 
+
+.headerimg{
+  height:400px;
+}
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 30px;
+  margin-top: 5%;
+  margin-bottom: 6%;
+}
+  
+.mig {
+  height:800px;
+  background-size: 340px 300px;
+}
+
+.portræt{
+  border-radius: 30%;
+  padding: 0%;
+  margin-bottom: 2%;
+}
+
+.profil {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.flex-container { /*så der placeres 2 image side om side på en række i flexbox*/
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.portfolio{
+  padding-top: 2%;
+}
+
+.kontakt{
+  background-size: 230px 150px;
+  padding-top: 3%;
+  padding-bottom: 6%;
+}
+
+.btn {
+  margin-left: 40%;
+  padding:10px 15px;
+}
+
+.btn-cv {
+  margin-left: 3%;
+  padding:10px 15px;
+}
+
+h3{
+  font-size: 18px;
+  margin-left: 3%;
+}
+
+a{
+  font-size: 18px;
+  margin-left:3%;
+  line-height: 1.6;
+}
+
+p{
+  font-size: 18px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-left: 23%;
+}
 
 
-  @media screen and (min-width: 750px){ /* media queries til tablet*/
+}
+@media screen and (min-width: 1900px){ /*media queries til desktop*/
   * {
     margin: 0px;
     padding: 0px;
   } 
 
-  .headerimg{
-    height:400px;
-  }
-  .top-img{
-    font-size: 40px;
-  }
-
-  h2{
-    font-size: 30px;
-    margin-top: 5%;
-    margin-bottom: 6%;
-  }
-   
   .mig {
-    height:800px;
+    background-size: 500px 450px;
   }
-  
-  .portræt{
-    border-radius: 30%;
-    padding: 0%;
-    margin-bottom: 2%;
-  }
-
-  .profil {
-    padding-top: 2%;
-    padding-bottom: 2%;
-  }
-
-  .flex-container { /*så der placeres 2 image side om side på en række i flexbox*/
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-
-  .portfolio{
-    padding-top: 2%;
+  .flex-container { /*så der placeres 3 image side om side på en række i flexbox*/
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   .kontakt{
-    padding-top: 1%;
-    padding-bottom: 6%;
-  }
-
-  .btn {
-    margin-left: 40%;
-    padding:10px 15px;
-  }
-  
-  .btn-cv {
-    margin-left: 3%;
-    padding:10px 15px;
-  }
-  
-  h3{
-    font-size: 18px;
-    margin-left: 3%;
-  }
-
-  a{
-    font-size: 18px;
-    margin-left:3%;
-    line-height: 1.6;
-  }
-
-  p{
-    font-size: 18px;
-    margin-top: 1%;
-    margin-bottom: 2%;
-    margin-left: 23%;
-  }
-
+    background-size: 400px 300px;
 }
-  @media screen and (min-width: 1900px){ /*media queries til desktop*/
-    * {
-      margin: 0px;
-      padding: 0px;
-    } 
-  
-    .flex-container { /*så der placeres 3 image side om side på en række i flexbox*/
-      margin-left: 20%;
-      margin-right: 20%;
-    }
-
-  }
